@@ -1,0 +1,18 @@
+START MedicalDiagnosisExpertSystem
+
+DEFINE rules as set of diseases with symptoms and certainty factors
+
+PROMPT user to enter symptoms one by one
+STORE user symptoms in a list
+
+FOR each disease in rules:
+    CALCULATE number of matching symptoms with user input
+    COMPUTE match ratio = matched / total disease symptoms
+    IF match ratio >= threshold:
+        CALCULATE final certainty = match ratio * disease certainty
+        STORE diagnosis candidate
+
+SELECT diagnosis with highest certainty
+DISPLAY diagnosis and certainty factor to user
+
+END
