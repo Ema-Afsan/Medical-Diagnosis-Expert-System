@@ -1,0 +1,8 @@
+# Core requirements (Python standard library - no install needed)
+# But listed here for clarity
+dataclasses; python_version  "3.7"
+
+
+matplotlib      # For plotting / future visualizations
+graphviz        # Optional: rule path visualization
+pandas          # Optional: working with tabular medical datasets
